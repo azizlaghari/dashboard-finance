@@ -1,5 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.ant-layout-sider-children {
+  min-height: 100vh;
+  height: 100%;
+  margin-top: -0.1px;
+  padding-top: 0.1px;
+}
+.ant-menu-item-selected{
+    margin-top: 3rem;
+}
+.ant-menu{
+    margin-top: 5rem;
+}
+.ant-menu-dark .ant-menu-item-selected{
+background-color: #6359E9;
+padding: -2px;
 }
