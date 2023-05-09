@@ -36,7 +36,11 @@ input{
     background-color: #1D1D41;
     color: #fff;
     border-radius: 15px;
-    margin-left: 2rem;
+    margin-left: 0.1rem;
+    cursor: pointer;
+}
+.ant-card:hover{
+    background-color: #2f2f67;
 }
 .ant-statistic .ant-statistic-title{
     color: #ffffff68;
