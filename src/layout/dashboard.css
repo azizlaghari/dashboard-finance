@@ -12,7 +12,13 @@
   padding-top: 0.1px;
 }
 .ant-menu-item-selected{
-    margin-top: 3rem;
+    margin-top: 1rem;
+}
+.ant-menu-dark{
+  background-color: #1D1D41;
+}
+.ant-layout .ant-layout-sider{
+  background-color: #1D1D41;
 }
 .ant-menu{
     margin-top: 5rem;
@@ -20,4 +26,13 @@
 .ant-menu-dark .ant-menu-item-selected{
 background-color: #6359E9;
 padding: -2px;
+}
+.ant-menu .ant-menu-item.ant-menu-item-only-child >.ant-menu-item-icon{
+  background-color: #ffffff79;
+}
+.ant-menu-dark.ant-menu-inline .ant-menu-item{
+  margin-top: -0.5rem;
+}
+.ant-menu-dark.ant-menu-inline .ant-menu-item:nth-child(10) {
+  margin-top: 8rem;
 }

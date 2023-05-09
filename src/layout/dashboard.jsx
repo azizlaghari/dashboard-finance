@@ -1,14 +1,20 @@
 import { RxDashboard } from 'react-icons/rx';
+import { BsShieldCheck } from 'react-icons/bs';
+import { BiHelpCircle } from 'react-icons/bi';
+import { CiDark } from 'react-icons/ci';
 import { IoMdAnalytics } from 'react-icons/io';
 import { TfiWallet } from 'react-icons/tfi';
 import { AiOutlineSetting } from 'react-icons/ai';
 import { MdOutlineAccountBox } from 'react-icons/md';
-import { Layout, Menu, theme } from "antd";
+import { Avatar, Divider, Layout, Menu, theme } from "antd";
 import React from "react";
 import "./dashboard.css";
+import RightDashboard from '../components/rightDashboard';
 
 const { Header, Content, Footer, Sider } = Layout;
 const Dashboard = () => {
+  const url = '../assets/aziz.jpg';
+
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -51,42 +57,60 @@ const Dashboard = () => {
               label: "Accounts",
             },
             {
-                key: "5",
-                icon: <AiOutlineSetting />,
-                label: "Setting",
+              key: "5",
+              icon: <AiOutlineSetting />,
+              label: "Setting",
+            },
+            {
+              icon: <Divider />
+            },
+            {
+              key: "6",
+              icon: <BsShieldCheck />,
+              label: "Security",
+            },
+            {
+              key: "7",
+              icon: <BiHelpCircle />,
+              label: "Help Centre",
+            },
+            {
+              key: "8",
+              icon: <CiDark />,
+              label: "Dark Mode",
+            },
+            {
+              key: "9",
+              icon:     <Avatar src={url} />              ,
+              label: "Abdul Aziz ",
             },
           ]}
         />
       </Sider>
       <Layout>
-        <Header
-          style={{
-            padding: 0,
-            background: colorBgContainer,
-          }}
-        />
+        
         <Content
           style={{
-            margin: "24px 16px 0",
-          }}
+         }}
         >
           <div
             style={{
               padding: 24,
-              minHeight: 360,
-              background: colorBgContainer,
+              minHeight: '100vh',
+              background: '#141332',
+              color: "#fff"
             }}
           >
-            content
+            <RightDashboard></RightDashboard>
           </div>
         </Content>
-        <Footer
+        {/* <Footer
           style={{
             textAlign: "center",
           }}
         >
           Ant Design ©2023 Created by Ant UED
-        </Footer>
+        </Footer> */}
       </Layout>
     </Layout>
   );
