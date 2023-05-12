@@ -5,6 +5,7 @@ import { Card, Col, Row, Statistic } from 'antd';
 import { BsArrowDownLeft, BsArrowUpRight } from 'react-icons/bs';
 import Graph from './Graphs';
 import Graphs from './Graphs';
+import MyCard from './MyCard';
 
 const RightDashboard = () => {
     return (
@@ -51,6 +52,9 @@ const RightDashboard = () => {
                         </Card>
                     </Col>
                 </Row>
+            </div>
+            <div className="MyCard">
+                <MyCard></MyCard>
             </div>
             <div className="graph">
                 <Graphs></Graphs>
