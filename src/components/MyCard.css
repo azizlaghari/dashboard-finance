@@ -1,0 +1,16 @@
+.container{
+    margin: 0 2rem;
+    margin-top: 3rem;
+    background-color: #1D1D41;
+    color: #fff;
+    border-radius: 15px;
+    margin-left: 0.1rem;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    display: inline-block;
+
+}
+.container:nth-child(1){
+    font-size: 24px;
+
+}

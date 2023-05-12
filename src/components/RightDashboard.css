@@ -1,64 +1,139 @@
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    min-width: 100%;
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  min-width: 100%;
 }
-.header1{
-    flex: 1;
+.header1 {
+  flex: 1;
 }
-.heading{
-    font-size: 20px;
-    font-weight: bold;
+.heading {
+  font-size: 20px;
+  font-weight: bold;
 }
-.subheading{
-    font-size: 14px;
-    font-weight: lighter;
+.subheading {
+  font-size: 14px;
+  font-weight: lighter;
 }
-.searchBar{
-    margin-left: 30rem;
+.searchBar {
+  margin-left: 30rem;
 }
-input{
-    background-color: #1D1D41;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 1rem;
-    margin-top: 5px;
-    width: 300px;
+input {
+  background-color: #1d1d41;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 5px;
+  width: 300px;
 }
 
 /* cards */
-.ant-card{
-    margin-top: 3rem;
-    background-color: #1D1D41;
-    color: #fff;
-    border-radius: 15px;
-    margin-left: 0.1rem;
-    cursor: pointer;
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+  margin: 3rem 0;
 }
-.ant-card:hover{
-    background-color: #2f2f67;
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -15px;
 }
-.ant-statistic .ant-statistic-title{
-    color: #ffffff68;
-    margin-left: 4rem;
-    font-size: large;
-    margin-bottom: -0.5rem;
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
-.ant-statistic-content-prefix{
-    background-color: #64CFF6;
-    border-radius: 5px;
-    padding: 5px 15px;
+
+/* Style the counter cards */
+.card {
+  padding: 16px;
+  text-align: center;
+  background-color: #1d1d41;
+  color: #fff;
+  border-radius: 10px;
 }
-.ant-statistic-content-value{
-    margin-left: 5px;
-    font-size: 35px;
-    font-weight: bold;
+
+h3{
+  color: #8C89B4;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 2rem;
 }
-/* My Card */
+.icon{
+  position: relative;
+  top: 2.6rem;
+  right: 6.2rem;
+  background-color: #64CFF6;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+}
+.amount{
+  font-size: 24px;
+  font-weight: bold;
+}
+.percentageBox1{
+  position: relative;
+  left: 120px;
+  bottom: 25px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  background-color: #02b1597a;
+  color: #02b159;
+  font-size: 12px;
+} 
+.percentageBox2{
+  position: relative;
+  left: 120px;
+  font-size: 12px;
+  bottom: 25px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  background-color: #e4141469;
+  color: #E41414;
+} 
+.Total{
+  position: relative;
+  right: 22px;
+}
 .MyCard{
-    display: inline;
+  text-align: left;
+  font-size: 24px;
+  padding-bottom: 6rem;
+
+}
+.CardBalance{
+  color: #b8b6d8;
+  font-size: 16px;
+  line-height: 2rem;
+}
+.mastercard{
+  padding: 2rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  background: linear-gradient(170deg, #9C2CF3, #3A6FF9);
+} 
+.logo{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 40px;
+  left: 200px;
 }

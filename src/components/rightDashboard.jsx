@@ -1,8 +1,9 @@
 import React from 'react'
-import './RightDashboard.css'
-import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
-import { Card, Col, Row, Statistic } from 'antd';
-import { BsArrowDownLeft, BsArrowUpRight } from 'react-icons/bs';
+import './RightDashboard.css';
+import { ImArrowDownLeft2, ImArrowUpRight2 } from 'react-icons/im'
+import  logo from '../assets/mastercard_logo.svg'
+
+
 import Graph from './Graphs';
 import Graphs from './Graphs';
 import MyCard from './MyCard';
@@ -19,46 +20,46 @@ const RightDashboard = () => {
                     <input type="search" placeholder='Search for Anything...' />
                 </div>
             </div>
-            <div className="cards">
-                <Row gutter={8}>
-                    <Col span={8}>
-                        <Card bordered={false}>
-                            <Statistic
-                                title="Total Income"
-                                value={632.0000}
-                                precision={3}
-                                valueStyle={{
-                                    color: '#fff',
-                                }}
-                                icon={<BsArrowDownLeft />}
-                                prefix={<BsArrowDownLeft />}
-                                suffix="$"
-                            />
-                        </Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card bordered={false}>
-                            <Statistic
-                                title="Total Outcome"
-                                value={632.000}
-                                precision={3}
-                                valueStyle={{
-                                    color: '#fff',
-                                }}
-                                suffix="$"
-                                prefix={<BsArrowUpRight />}
-                                
-                            />
-                        </Card>
-                    </Col>
-                </Row>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <span className='icon'><ImArrowDownLeft2 /></span>
+                        <h3 className='Total'>Total Income</h3>
+                        <p className='amount'>$600,000.00</p>
+                        <span className='percentageBox1'>-1.29%</span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <span className='icon'><ImArrowUpRight2 /></span>
+                        <h3 className='Total'>Total Outcome</h3>
+                        <p className='amount'>$300,000.00</p>
+                        <span className='percentageBox2'>+1.29%</span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card MyCard">
+                        <h1>My Card</h1>
+                        <h3 className='CardBalance'>Card Balance</h3>
+                        <p className='amount'>$300,000.00</p>
+
+                        <div className="mastercard">
+                            <h3 className='CurrentBalance'>Current Balance</h3>
+                            <img src={logo} alt="" className='logo' />
+                            <p className='amount'>$300,000.00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="MyCard">
+            {/* <div className="MyCard">
                 <MyCard></MyCard>
-            </div>
-            <div className="graph">
+            </div> */}
+
+            {/* <div className="graph">
                 <Graphs></Graphs>
-            </div>
+            </div> */}
         </>
     )
 }
