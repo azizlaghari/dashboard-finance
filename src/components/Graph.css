@@ -1,13 +1,16 @@
 .graph {
-  width: 730px;
-  margin-top: 3rem;
+  width: 65%;
+  margin-top: 32rem;
   background-color: #1d1d41;
   color: #fff;
   border-radius: 10px;
   padding: 50px;
+  position: relative;
+  overflow: hidden;
+  bottom: 300px;
 }
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-weight: bolder;
   font-size: 24px;
 }

@@ -1,12 +1,8 @@
 import React from 'react'
 import './RightDashboard.css';
 import { ImArrowDownLeft2, ImArrowUpRight2 } from 'react-icons/im'
-import  logo from '../assets/mastercard_logo.svg'
-
-
-import Graph from './Graphs';
+import logo from '../assets/mastercard_logo.svg'
 import Graphs from './Graphs';
-import MyCard from './MyCard';
 
 const RightDashboard = () => {
     return (
@@ -50,16 +46,17 @@ const RightDashboard = () => {
                             <img src={logo} alt="" className='logo' />
                             <p className='amount'>$300,000.00</p>
                         </div>
+                        <div className="btn">
+                            <button className='primaryBTN'>Manage Cards</button>
+                            <button className='secondaryBTN'>Transfer</button>
+                        </div>
                     </div>
+
                 </div>
             </div>
-            {/* <div className="MyCard">
-                <MyCard></MyCard>
-            </div> */}
-
-            {/* <div className="graph">
+            <div className="graph">
                 <Graphs></Graphs>
-            </div> */}
+            </div>
         </>
     )
 }

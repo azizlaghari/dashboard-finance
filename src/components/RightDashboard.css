@@ -116,7 +116,7 @@ h3{
 .MyCard{
   text-align: left;
   font-size: 24px;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
 
 }
 .CardBalance{
@@ -129,6 +129,8 @@ h3{
   margin-top: 1rem;
   border-radius: 20px;
   background: linear-gradient(170deg, #9C2CF3, #3A6FF9);
+  cursor: pointer;
+
 } 
 .logo{
   width: 40px;
@@ -136,4 +138,41 @@ h3{
   position: relative;
   bottom: 40px;
   left: 200px;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.primaryBTN{
+  background-color: #6359E9;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px;
+  margin-top: 2rem;
+}
+.primaryBTN:hover{
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #6359E9;
+  color: #6359E9;
+
+}
+.secondaryBTN{
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.8rem 3rem;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+.secondaryBTN:hover{
+  background: #fff;
+  color: #000;
+  cursor: pointer;
 }
