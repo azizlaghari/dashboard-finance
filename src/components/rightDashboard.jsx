@@ -53,10 +53,8 @@ const RightDashboard = () => {
                             <button className='secondaryBTN'>Transfer</button>
                         </div>
                     </div>
-                    <div className="activityCard">
-                        <ActivityCard></ActivityCard>
-                    </div>
                 </div>
+                
 
             </div>
             <div className="graph">
@@ -65,6 +63,9 @@ const RightDashboard = () => {
             <div className="TransactionTable">
                 <TransactionTable></TransactionTable>
             </div>
+            <div className="activityCard">
+                    <ActivityCard></ActivityCard>
+                </div>
         </>
     )
 }
