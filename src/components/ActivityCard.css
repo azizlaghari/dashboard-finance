@@ -1,0 +1,13 @@
+.ActivityCard {
+  padding: 16px;
+  text-align: center;
+  background-color: #1d1d41;
+  color: #fff;
+  border-radius: 10px;
+  margin: 16px;
+  width: 33%;
+  min-width: 33%;
+  height: 300px;
+  font-size: 16px;
+
+}
