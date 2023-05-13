@@ -116,8 +116,6 @@ h3{
 .MyCard{
   text-align: left;
   font-size: 24px;
-  padding-bottom: 2rem;
-
 }
 .CardBalance{
   color: #b8b6d8;
@@ -175,4 +173,7 @@ h3{
   background: #fff;
   color: #000;
   cursor: pointer;
+}
+.activityCard{
+  float: right;
 }

@@ -3,6 +3,8 @@ import './RightDashboard.css';
 import { ImArrowDownLeft2, ImArrowUpRight2 } from 'react-icons/im'
 import logo from '../assets/mastercard_logo.svg'
 import Graphs from './Graphs';
+import TransactionTable from './TransactionTable';
+import ActivityCard from './ActivityCard';
 
 const RightDashboard = () => {
     return (
@@ -51,11 +53,17 @@ const RightDashboard = () => {
                             <button className='secondaryBTN'>Transfer</button>
                         </div>
                     </div>
-
+                    <div className="activityCard">
+                        <ActivityCard></ActivityCard>
+                    </div>
                 </div>
+
             </div>
             <div className="graph">
                 <Graphs></Graphs>
+            </div>
+            <div className="TransactionTable">
+                <TransactionTable></TransactionTable>
             </div>
         </>
     )
