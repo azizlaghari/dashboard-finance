@@ -30,6 +30,25 @@ input {
   width: 300px;
 }
 
+@media screen and (max-width: 480px) {
+  .header {
+    width: 30%;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .searchBar{
+    display: none;
+  }
+  .header1{
+    font-size: 16px;
+    margin-left: 5rem;
+    min-width: 30%;
+    margin: auto;
+    margin-left: 3rem;
+  }
+}
+
 /* cards */
 /* Float four columns side by side */
 .column {
@@ -176,4 +195,16 @@ h3{
 }
 .activityCard{
   float: right;
+}
+/* Graph */
+
+@media screen and (max-width: 480px) {
+  .Analytics{
+    width: 30%;
+    display: none;
+    min-width: 30%;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+  }
 }

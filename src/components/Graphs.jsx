@@ -31,8 +31,10 @@ const Graphs = () => {
 
   return (
     <>
-      <h2>Analytics</h2>
-      <Column {...config} />
+      <div className="Analytics">
+        <h2>Analytics</h2>
+        <Column {...config} />
+      </div>
     </>
   );
 };
